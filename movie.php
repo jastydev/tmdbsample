@@ -62,22 +62,24 @@
 		</nav>
 		
 		<div class="container">
-			<div class="row mt50 selected-movie">
+			<div class="row mt50 selected-movie movie">
 				
-				<div class="col-sm-4"> 
+				<div class="col-sm to-right"> 
+				<!--<div class="movie">-->
 					<img class="poster-image" src="https://image.tmdb.org/t/p/w342<?php echo $movie->poster_path ?>">
 					
-					<div class="movie">
+					
 					<?php if(isset($_SESSION['session_user_id'])){ ?>
 						<div class="center">
 							<div class="fav_<?php echo $movie->id ?> heart addToFavourites" data-movie_data="<?php echo base64_encode(json_encode($movie)) ?>" data-movie_id="<?php echo $movie->id ?>"></div>
 						</div>
+						
 					<?php } else { ?>
 						<div class="center"><a href="login.php" class="heart"></a></div>
 					<?php } ?>
 					</div>
-				</div>
-				<div class="col-sm-8">
+				<!--</div>-->
+				<div class="col-sm">
 					<h4><?php echo $movie->title ?></h4>
 					<p class="blue-text"><?php echo "Release date: " . $movie->release_date ?></p>
 					<p class="text-white"><?php echo $movie->overview ?></p>
@@ -86,7 +88,6 @@
 			</div>
 		</div>
 		
-		<!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

@@ -12,6 +12,10 @@
   margin-top: 50px;
 }
 
+.mt20 {
+  margin-top: 20px;
+}
+
 .mb50 {
   margin-bottom: 50px;
 }
@@ -88,6 +92,7 @@ p {
 .ui-menu {
   background: #00040c;
   padding: 20px 40px;
+  width: 250px !important;
 }
 
 .ui-menu-item {
@@ -242,6 +247,9 @@ form .error {
     display: block;
     float: right;
   }
+  .selected-movie h4 {
+    font-size: 1.5rem;
+  }
 }
 @media screen and (max-width: 768px) {
   .movie p {
@@ -256,12 +264,25 @@ form .error {
   .movie .movie-title-container .overview {
     display: none;
   }
-  nav .welcome {
+  nav .user-welcome {
     display: none;
   }
   .search-input {
     width: 60%;
     margin-left: 0 !important;
+  }
+  .selected-movie h4 {
+    font-size: 1.4rem;
+  }
+  .selected-movie .to-right img {
+    width: 95%;
+  }
+  .login-btn {
+    margin-left: 0;
+    margin-top: 8px;
+  }
+  .search-input {
+    margin-top: 5px;
   }
 }
 @media screen and (max-width: 575px) {
@@ -279,6 +300,19 @@ form .error {
   }
   .search-input {
     width: 40%;
+  }
+  .selected-movie h4 {
+    margin-top: 15px;
+    text-align: center;
+  }
+  .selected-movie .to-right img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 469px) {
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 

@@ -99,7 +99,7 @@
 			
 			<!--Pagination-->
 			<div class="row mb50">
-				<div class="col-sm ">
+				<div class="col-sm">
 					<nav>
 						<ul class="pagination justify-content-center">
 							<?php 

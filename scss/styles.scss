@@ -249,6 +249,13 @@ form {
 			}
 		}
 	}
+	.selected-movie {
+		h4 {
+			font-size: 1.5rem;
+		}
+	}
+
+
 }
 @media screen and (max-width: 768px) {
 	.movie {
@@ -268,13 +275,30 @@ form {
 		}
 	}
 	nav {
-		.welcome {
+		.user-welcome {
 			display: none;
 		}
 	}
 	.search-input {
 		width: 60%;
 		margin-left: 0 !important;
+	}
+	.selected-movie {
+		h4 {
+			font-size: 1.4rem;
+		}
+		.to-right {
+			img {
+				width: 95%;
+			}
+		}
+	}
+	.login-btn {
+		margin-left: 0;
+		margin-top: 8px;
+	}
+	.search-input {
+		margin-top: 5px;
 	}
 
 }
@@ -296,9 +320,23 @@ form {
 	.search-input {
 		width: 40%;
 	}
+	.selected-movie {
+		h4 {
+			margin-top: 15px;
+			text-align: center;
+		}
+		.to-right {
+			img {
+				width: 100%;
+			}
+		}
+	}
 }
 @media screen and (max-width: 469px) {
-
+	.container {
+		padding-right: 15px;
+		padding-left: 15px;
+	}
 }
 
 
